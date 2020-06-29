@@ -1,6 +1,6 @@
 <?php
 $dsn = 'mysql:dbname=sample_db;host=localhost;';
-$user = 'otsubo';
+$user = 'towa';
 $password = 'morijyobi';
 try {
 	$dbh = new PDO($dsn, $user, $password);
@@ -109,7 +109,7 @@ try {
 				</form>
 			</div>
 			<div class="tab-pane" id="update">
-			<form class="mt-3" action="./update.php" method="POST">
+				<form class="mt-3" action="./update.php" method="POST">
 					<div class="form-group row">
 						<label for="id" class="col-sm-2 col-form-label">ID</label>
 						<div class="col-sm-10">
