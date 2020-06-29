@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAMP SAMPLE PAGE</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
 </head>
+
 <body>
     <nav class="navbar bg-dark navbar-dark">
         <div class="container-fruir">
@@ -16,13 +20,14 @@
         </div>
     </nav>
 
-    <div class="jumbotron jumbotoron-fluid">
+    <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4">DB Manager </h1>
-            <p class="read">LAMP環境を構築し、データベース管理webアプリを作成しています。<br>
-            デザインはBootstrapを使用
-             </p>
-        </div>   
+            <h1 class="display-4">DB Manager -sample_db-</h1>
+            <p class="read">
+                LAMP環境を構築し、データベース管理webアプリを作成しています。</br>
+                デザインはBootstrapを使用
+            </p>
+        </div>
     </div>
 
     <div class="container">
@@ -37,14 +42,15 @@
                 <a href="#update" class="nav-link" data-toggle="tab">Update</a>
             </li>
             <li class="nav-item">
-                <a href="#delite" class="nav-link" data-toggle="tab">Deleat</a>
+                <a href="#delete" class="nav-link" data-toggle="tab">Delete</a>
             </li>
         </ul>
+
         <div class="tab-content">
             <div class="tab-pane active" id="select">
-                <caption>Show User Table</caption>
                 <table class="table table-hover mt-2">
-                    <thead>
+                    <caption>Show User Table</caption>
+                    <thead class="thead-dark">
                         <tr>
                             <th>Id</th>
                             <th>Name</th>
@@ -53,31 +59,44 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>1</td>
+                            <th>1</th>
                             <td>test</td>
                             <td>20</td>
                         </tr>
                         <tr>
-                            <td>2</td>
-                            <td>test2</td>
+                            <th>2</th>
+                            <td>test</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td>test</td>
                             <td>40</td>
                         </tr>
                     </tbody>
-                
+                </table>
             </div>
-                
-                <div class="tab-pane" id="insert">
-                    <p>sample tab2</p>
-                </div>
-                <div class="tab-pane" id="update">
-                    <p>sample tab3</p>
-                </div>    
-                <div class="tab-pane" id="delite">
-                    <p>sample tab 4</p>
-                </div>
-            
+            <div class="tab-pane" id="insert">
+                <p>sample tab 2</p>
+            </div>
+            <div class="tab-pane" id="update">
+                <p>sample tab 3</p>
+            </div>
+            <div class="tab-pane" id="delete">
+                <p>sample tab 4</p>
+            </div>
         </div>
     </div>
-    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
